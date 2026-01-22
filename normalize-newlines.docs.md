@@ -1,0 +1,1 @@
+This tool normalizes text by converting multiple consecutive newlines into a single newline. Paste your text into the input area, click "Normalize," and the cleaned text will appear in the output. You can then copy the result using the copy button. Useful for cleaning up text with excessive blank lines from copying or formatting issues.
