@@ -118,10 +118,13 @@
 
                 const statusIcon = document.createElement('span');
                 statusIcon.className = 'status';
-                statusIcon.textContent = item.status === 'read' ? '👁️' : '🙈';
-                statusIcon.title = 'Toggle read/unread';
+                const statusIcons = {'unread': '🔒', 'started': '📖', 'read': '✅'};
+                statusIcon.textContent = statusIcons[item.status];
+                statusIcon.title = `Status: ${item.status}`;
                 statusIcon.addEventListener('click', () => {
-                    item.status = item.status === 'read' ? 'unread' : 'read';
+                    const statuses = ['unread', 'started', 'read'];
+                    const currentIndex = statuses.indexOf(item.status);
+                    item.status = statuses[(currentIndex + 1) % statuses.length];
                     saveList();
                     renderList();
                 });
