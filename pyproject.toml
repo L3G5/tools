@@ -1,0 +1,6 @@
+[tool.uv]
+dev-dependencies = [
+    "markdown>=3.0",
+    "gitpython>=3.0",
+    "jinja2>=3.0"
+]
