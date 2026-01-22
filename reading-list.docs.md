@@ -1,0 +1,1 @@
+A simple tool to organize links you'd like to read. Add links with optional descriptions (first line as URL, rest as description). Rearrange items by dragging, toggle read/unread status, cycle through quality ratings (meh/okay/fire/double fire), and remove items if needed. Export the full list as Markdown for backup or sharing. Data persists locally in your browser.
