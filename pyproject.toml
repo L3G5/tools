@@ -1,5 +1,9 @@
-[tool.uv]
-dev-dependencies = [
+[project]
+name = "tools"
+version = "0.1.0"
+requires-python = ">=3.12"
+[dependency-groups]
+dev = [
     "markdown>=3.0",
     "gitpython>=3.0",
     "jinja2>=3.0"
